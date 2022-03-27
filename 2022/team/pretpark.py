@@ -37,7 +37,7 @@ def handle_packet(pkt):
      
        
 def show_hologram(curmac):               
-    if curmac not in IGNORE_LIST: #negeer als de device een mederwerker is        
+    if curmac not in IGNORE_LIST: #negeer als de device van een mederwerker is        
         if curmac in known_devices:
             #logging.info('Probe Recorded from ' +  known_devices[curmac] + ' with MAC ' + curmac)
             global SEEN_DEVICES
