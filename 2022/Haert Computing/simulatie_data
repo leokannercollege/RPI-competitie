@@ -1,0 +1,37 @@
+at1
+
+Counter({'tieners': 4, 'kleuters': 3, 'adolescenten': 2, 'overig': 2})
+Counter({'overig': 6, 'tieners': 3, 'kleuters': 2})
+Counter({'overig': 9, 'tieners': 1, 'kleuters': 1})
+Counter({'overig': 6, 'kleuters': 2, 'adolescenten': 2, 'tieners': 1})
+Counter({'overig': 3, 'kleuters': 3, 'tieners': 3, 'adolescenten': 2})
+
+at2
+Counter({'overig': 6, 'adolescenten': 3, 'tieners': 2})
+Counter({'overig': 5, 'tieners': 3, 'kleuters': 2, 'adolescenten': 1})
+Counter({'overig': 6, 'kleuters': 3, 'adolescenten': 1, 'tieners': 1})
+Counter({'overig': 3, 'tieners': 3, 'kleuters': 3, 'adolescenten': 2})
+Counter({'overig': 5, 'adolescenten': 3, 'kleuters': 2, 'tieners': 1})
+
+at3
+Counter({'overig': 5, 'adolescenten': 4, 'kleuters': 2})
+Counter({'tieners': 5, 'kleuters': 3, 'adolescenten': 2, 'overig': 1})
+Counter({'adolescenten': 4, 'tieners': 3, 'kleuters': 3, 'overig': 1})
+Counter({'overig': 6, 'adolescenten': 3, 'kleuters': 2})
+Counter({'overig': 4, 'adolescenten': 4, 'tieners': 2, 'kleuters': 1})
+
+alt 4
+Counter({'overig': 5, 'tieners': 3, 'adolescenten': 2, 'kleuters': 1})
+Counter({'overig': 6, 'tieners': 2, 'kleuters': 2, 'adolescenten': 1})
+Counter({'overig': 6, 'adolescenten': 3, 'tieners': 1, 'kleuters': 1})
+Counter({'overig': 6, 'kleuters': 4, 'tieners': 1})
+Counter({'overig': 8, 'kleuters': 2, 'tieners': 1})
+
+al5
+Counter({'adolescenten': 4, 'overig': 3, 'tieners': 2, 'kleuters': 2})
+Counter({'overig': 5, 'adolescenten': 2, 'kleuters': 2, 'tieners': 2})
+Counter({'overig': 5, 'adolescenten': 2, 'tieners': 2, 'kleuters': 2})
+Counter({'overig': 5, 'tieners': 3, 'kleuters': 3})
+Counter({'overig': 6, 'kleuters': 3, 'adolescenten': 1, 'tieners': 1})
+
+
