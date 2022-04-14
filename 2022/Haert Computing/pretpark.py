@@ -48,14 +48,20 @@ def show_hologram(curmac):
         
         # doe een actie als er meer dan 10 devices bij een wachtlocatie zijn
         if len(SEEN_DEVICES) > 10 :
-            count_devices = Counter(SEEN_DEVICES.values())
+            count_devices = Counter(SEEN_DEVICES.values())            
             print(count_devices)
-            group = max(count_devices, key=count_devices.get)
+            if len(count_devices) > 1:
+                group = max(count_devices, key=count_devices.get)
+            else:
+                group = list(SEEN_DEVICES.values())[0]
             
             if group == 'overig':
-                del count_devices['overig']
-                group = max(count_devices, key=count_devices.get)
-                print(count_devices)
+                if len(count_devices) > 1:
+                    del count_devices['overig']
+                    group = max(count_devices, key=count_devices.get)
+                    #print(count_devices)
+                else:
+                    group = random.choice(["kleuters", "tieners", "adolescenten"])
            
             if group == "kleuters":
                 strip.setcolourrgb(0, 255, 0)
@@ -83,17 +89,18 @@ def show_hologram(curmac):
 #     parser.add_argument('--interface', '-i', default='wlan1', # Change mon0 to your monitor-mode enabled wifi interface
 #                 help='monitor mode enabled interface')
 #     args = parser.parse_args()
-
-
+# 
+# 
 #     sniff(iface=args.interface, prn=handle_packet) #start sniffin
 #     while 1:
 #        time.sleep(1)
 
 '''met simulatie-data'''
-def main():    
+def main():
+    print('\n' + '\033[93m' + 'Simulation mode initialized' + '\033[0m' + '\n') 
     while True:
         show_hologram(random.choice(visitors))
-        time.sleep(1)
+        time.sleep(0.5)
 
 if __name__ == '__main__':
     main()
