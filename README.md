@@ -1,4 +1,4 @@
 # RPI-competitie
-Deelnemers 2022
+Deelnemers 2023
 
-Haert Computing
+De Eco Kanners / Leocracker / QR-code-in-Nood
