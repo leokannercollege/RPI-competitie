@@ -1,0 +1,104 @@
+{% extends "base.html"%}
+{% block title %} nieuw product {% endblock %}
+
+{%block content%}
+<html>
+<style>
+    table {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 20px;
+        height: 100%;
+        table-layout: fixed;
+    }
+
+    td {
+        border: 1px solid black;
+        text-align: center;
+        padding: 10px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #00cf45;
+    }
+
+    h1 {
+        color: green;
+    }
+    
+</style>
+
+<body>
+    <form action="{{url_for('new_product')}}" method="post">
+        <table align="center">
+            <tr>
+                <th style="text-align:center"> </th>
+            </tr>
+
+            <tr>
+                <td>producent</td>
+                <td><input type="text" name="producent" value="" required><br> </td>
+            </tr>
+            <tr>
+                <td>artikel</td>
+                <td><input type="text" name="artikel" value="" required><br> </td>
+            </tr>
+            <tr>
+                <td>EAN code</td>
+                <td><input type="text" name="ean" value="" required><br> </td>
+            </tr>
+
+        </table>
+
+        <br>
+        <br>
+
+        <table align="center">
+            <tr>
+                <th style="text-align:center"> categorie </th>
+                <th style="text-align:center"> score</th>
+            </tr>
+
+            <tr>
+                <td>schone energie</td>
+                <td><input type="number" name="energie" value="1" min="1" max="5"> </td>
+            </tr>
+
+            <tr>
+                <td>arbeidsomstandigheden</td>
+                <td><input type="number" name="arbeid" value="1" min="1" max="5"> </td>
+            </tr>
+
+            <tr>
+                <td>waterverbruik</td>
+                <td><input type="number" name="water" value="1" min="1" max="5"> </td>
+            </tr>
+
+            <tr>
+                <td>CO<sub>2</sub>-uitstoot</td>
+                <td><input type="number" name="co2" value="1" min="1" max="5"> </td>
+            </tr>
+
+            <tr>
+                <td>stikstofuitstoot</td>
+                <td><input type="number" name="stikstof" value="1" min="1" max="5"> </td>
+            </tr>
+
+            <tr>
+                <td>dierenwelzijn</td>
+                <td><input type="number" name="dieren" value="1" min="1" max="5"> </td>
+            </tr>
+
+        </table>
+        <br>
+        <div align="right">
+            <span style="margin-right: 10px"> <input type="submit" name="submit" class="btn btn-primary" value="Voeg Toe" /> </span>
+        </div>
+    </form>
+    <form action="{{url_for('new_product')}}" method="post">
+        <span> <input type="submit" name="clean" class="btn btn-danger" value="Leeg Database" /> </span>
+    </form>
+</body>
+
+</html>
+{% endblock %}
